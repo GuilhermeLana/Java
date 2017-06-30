@@ -6,13 +6,15 @@ public class TesteFuncionario {
 		Funcionario funcionario2 = new Funcionario();
 		funcionario1.nome = "Mario";
 		funcionario1.salario = 2000d;
+		funcionario1.aumentoSalario(500d);
+		String info = funcionario1.dadosFuncionario();
 		funcionario2.nome = "Lucio";
 		funcionario2.salario = 1500d;
-		System.out.println(funcionario1.nome);
-		System.out.println(funcionario1.salario);
+		funcionario2.aumentoSalario(500d);
+		String info2 = funcionario2.dadosFuncionario();
+		System.out.println(info);
 		System.out.println("----------------------------------------------------");
-		System.out.println(funcionario2.nome);
-		System.out.println(funcionario2.salario);
+		System.out.println(info2);
 	}
 
 }
