@@ -6,11 +6,11 @@ public class TesteConta_Metodos {
 	public static void main(String[] args) {
 		DecimalFormat df = new DecimalFormat("#0.00");
 		
-		Conta c = new Conta();
-		Agencia ag = new Agencia();
+		Agencia ag = new Agencia("2567-5");
+		Conta c = new Conta(ag);
+		
 		c.agencia = ag;
 		
-		c.agencia.numero = "2567-5";
 		c.numero = "265756-9";
 		c.saldo = 5000d;
 		

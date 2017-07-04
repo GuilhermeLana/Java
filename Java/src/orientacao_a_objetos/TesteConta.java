@@ -5,8 +5,10 @@ import java.text.DecimalFormat;
 public class TesteConta {
 	public static void main(String[] args) {
 		DecimalFormat df = new DecimalFormat ("#0.00");
-		Conta conta1 = new Conta();
-		Conta conta2 = new Conta();
+		Agencia ag1 = new Agencia("2567-5");
+		Agencia ag2 = new Agencia("2567-5");
+		Conta conta1 = new Conta(ag1);
+		Conta conta2 = new Conta(ag2);
 		conta1.numero = "265489-9";
 		conta1.saldo = 5086d;
 		conta1.limite = 800d;

@@ -10,6 +10,16 @@ public class Conta {
 	double limite = 100d;
 	Agencia agencia;
 	
+	public Conta(Agencia agencia) {
+		this.agencia = agencia;
+	}
+	
+	public Conta(Agencia agencia, String numero, double limite) {
+		this(agencia);
+		this.numero = numero;
+		this.limite = limite;
+	}
+	
 	public void deposita(double valor){
 		this.saldo += valor;
 	}
@@ -24,5 +34,9 @@ public class Conta {
 				+ "\nSaldo: R$ " +  df.format(this.saldo) + "\nLimite: R$ " +  df.format(this.limite);
 	}
 	
+	public void transfere(Conta destino, double valor) {
+		this.saldo -= valor;
+		destino.saldo += valor;
+	}
 
 }
