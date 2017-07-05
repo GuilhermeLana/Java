@@ -1,4 +1,4 @@
-package orientacao_a_objetos;
+package exercicios.orientacao_a_objetos;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

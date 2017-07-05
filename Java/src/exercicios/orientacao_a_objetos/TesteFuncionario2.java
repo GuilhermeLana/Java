@@ -1,4 +1,4 @@
-package orientacao_a_objetos;
+package exercicios.orientacao_a_objetos;
 
 import java.util.Scanner;
 
@@ -10,8 +10,9 @@ public class TesteFuncionario2 {
 		System.out.println("Digite o nome do funcionário:");
 		fun.nome = scanner.next();
 		
-		int aux = 0;
-		while (aux == 0) {
+		int aux = 1;
+		while (aux != 0) {
+			System.out.println("Qual operação ");
 			System.out.println("Digite o nome do funcionário:");
 			fun.nome = scanner.next();
 			System.out.println("Digite o salário do funcionário:");

@@ -1,4 +1,4 @@
-package orientacao_a_objetos;
+package exercicios.orientacao_a_objetos;
 
 public class TesteAgencia {
 	public static void main(String[] args) {
