@@ -1,41 +1,30 @@
 package heranca;
 
-import java.util.Date;
-import orientacao_a_objetos.Cliente;
 import orientacao_a_objetos.Funcionario;
 
 public class TesteHeranca {
-	
 	public static void main(String[] args) {
-		Cliente cliente = new Cliente();
-		cliente.setCodigo(1);
-		cliente.setNome("João");
+		Funcionario fun1 = new Funcionario("Julio", 2000);
+		Gerente ger = new Gerente(fun1, "Julio", "1234");
+		ger.bonificacao(20);
 		
-		Cliente cliente2 = new Cliente();
-		cliente2.setCodigo(2);
-		cliente2.setNome("Maria");
+		Funcionario fun2 = new Funcionario("Raquel", 1500);
+		Telefonista tel = new Telefonista(fun2, "25");
+		tel.bonificacao(10);
 		
-		Funcionario funcionario = new Funcionario();
-		funcionario.setNome("José");
-		funcionario.setSalario(1000d);
+		Funcionario fun3 = new Funcionario("Maiara", 1200);
+		Secretaria sec = new Secretaria(fun3, "236");
+		sec.bonificacao(10);
 		
-		Funcionario funcionario1 = new Funcionario();
-		funcionario.setNome("Joaquim");
-		funcionario.setSalario(1000d);
+		System.out.println(ger.imprimirDados());
 		
-		Emprestimo emprestimo = new Emprestimo(3000d, cliente, funcionario1);
-		emprestimo.setDataDeContratacao(new Date());
-		emprestimo.setTaxa(0.8);
-		emprestimo.calculaTaxa();
+		System.out.println(tel.imprimirDados());
 		
-		SeguroDeVeiculo seguroDeVeiculo = new SeguroDeVeiculo();
-		seguroDeVeiculo.setCliente(cliente2);
-		seguroDeVeiculo.setFuncionario(funcionario);
-		seguroDeVeiculo.setDataDeContratacao(new Date());
-		seguroDeVeiculo.setFranquia(1500d);
-		seguroDeVeiculo.setValorDoSeguroDeVeiculo(2000d);
-		seguroDeVeiculo.calculaTaxa();
+		System.out.println(sec.imprimirDados());
 		
+		System.out.println("\nBonificações: \nGerente: R$" + ger.getBonificacao() + 
+				"\nTelefonista: " + tel.getBonificacao() + "\nSecretária: "
+				+ sec.getBonificacao());
 	}
 
 }
