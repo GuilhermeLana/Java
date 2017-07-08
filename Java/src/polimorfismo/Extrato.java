@@ -3,8 +3,8 @@ package polimorfismo;
 public class Extrato {
 	
 	public void geradorDeExtratos(Conta c){
-		System.out.println("Agência: " + c.getAgencia() + "\nConta: " + c.getNumero() 
-		+ "\nSaldo: " + c.getSaldo());
+		System.out.println("Nome: " + c.getCliente().getNome() + "\nAgência: " + c.getAgencia().getNumAgencia() 
+		+ "\nConta: " + c.getNumConta() + "\nSaldo: " + c.getSaldo());
 	}
 
 }

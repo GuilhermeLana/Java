@@ -1,5 +1,7 @@
 package polimorfismo;
 
+import java.util.Date;
+
 public class Corrente extends Conta{
 	
 	private double limite;
@@ -11,6 +13,13 @@ public class Corrente extends Conta{
 	public void setLimite(double limite) {
 		this.limite = limite;
 	}
+	
+	
+	
+	
+	
+
+	
 	
 	
 
