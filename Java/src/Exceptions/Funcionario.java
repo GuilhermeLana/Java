@@ -1,4 +1,4 @@
-package polimorfismo;
+package Exceptions;
 
 public class Funcionario {
 	
@@ -16,6 +16,16 @@ public class Funcionario {
 	}
 	public void setSalario(double salario) {
 		this.salario = salario;
+	}
+	
+	public void aumentaSlario(double valor) throws Exception{
+		if(valor < 0){
+			Exception erro = new Exception ();
+			throw erro;
+		}else{
+			setSalario(valor + getSalario());
+
+		}
 	}
 	
 	

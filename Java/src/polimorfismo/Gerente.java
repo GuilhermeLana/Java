@@ -4,6 +4,7 @@ public class Gerente extends Funcionario{
 	
 	private String login;
 	private String senha;
+	
 	public String getLogin() {
 		return login;
 	}
