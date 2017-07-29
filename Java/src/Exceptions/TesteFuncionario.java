@@ -10,7 +10,7 @@ public class TesteFuncionario {
 		try {
 			fun.aumentaSlario(-200);
 		} catch (Exception e) {
-			System.out.println("Houve um erro ao depositar");
+			System.out.println(e.getMessage());
 		}
 
 		

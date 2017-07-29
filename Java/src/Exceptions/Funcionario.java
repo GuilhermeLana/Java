@@ -20,8 +20,7 @@ public class Funcionario {
 	
 	public void aumentaSlario(double valor) throws Exception{
 		if(valor < 0){
-			Exception erro = new Exception ();
-			throw erro;
+			throw new Exception ("Houve um erro ao depositar");
 		}else{
 			setSalario(valor + getSalario());
 

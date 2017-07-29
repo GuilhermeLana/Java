@@ -18,19 +18,19 @@ public class TesteConta {
 		ContaCorrente cc9 = new ContaCorrente();
 		
 		
-		List<Object> contaCorrente = new ArrayList<>();
+		List<ContaCorrente> lContas = new ArrayList<>();
 		
-		contaCorrente.add(cc1);
-		contaCorrente.add(cc2);
-		contaCorrente.add(cc3);
-		contaCorrente.add(cc4);
-		contaCorrente.add(cc5);
-		contaCorrente.add(cc6);
-		contaCorrente.add(cc7);
-		contaCorrente.add(cc8);
-		contaCorrente.add(cc9);
+		lContas.add(cc1);
+		lContas.add(cc2);
+		lContas.add(cc3);
+		lContas.add(cc4);
+		lContas.add(cc5);
+		lContas.add(cc6);
+		lContas.add(cc7);
+		lContas.add(cc8);
+		lContas.add(cc9);
 		
-		System.out.println(contaCorrente.size());
+		System.out.println(lContas.size());
 		
 		ContaPoupanca cp1 = new ContaPoupanca();
 		ContaPoupanca cp2 = new ContaPoupanca();
@@ -42,42 +42,42 @@ public class TesteConta {
 		ContaPoupanca cp8 = new ContaPoupanca();
 		ContaPoupanca cp9 = new ContaPoupanca();
 		
-		List<Object> contaPoupanca = new ArrayList<>();
+		List<ContaPoupanca> lContasP = new ArrayList<>();
 		
-        contaPoupanca.add(cp1);
-		contaPoupanca.add(cp2);
-		contaPoupanca.add(cp3);
-		contaPoupanca.add(cp4);
-		contaPoupanca.add(cp5);
-		contaPoupanca.add(cp6);
-		contaPoupanca.add(cp7);
-		contaPoupanca.add(cp8);
-		contaPoupanca.add(cp9);
+		lContasP.add(cp1);
+		lContasP.add(cp2);
+		lContasP.add(cp3);
+		lContasP.add(cp4);
+		lContasP.add(cp5);
+		lContasP.add(cp6);
+		lContasP.add(cp7);
+		lContasP.add(cp8);
+		lContasP.add(cp9);
 		
-		System.out.println(contaPoupanca.size());
+		System.out.println(lContasP.size());
 		
-		contaCorrente.remove(cc1);
-		contaCorrente.remove(2);
+		lContas.remove(cc1);
+		lContas.remove(2);
 		
-		contaPoupanca.remove(cp1);
-		contaPoupanca.remove(2);
+		lContasP.remove(cp1);
+		lContasP.remove(2);
 		
-		System.out.println(contaCorrente.size());
-		System.out.println(contaPoupanca.size());
+		System.out.println(lContas.size());
+		System.out.println(lContasP.size());
 		
-		for (Object object : contaCorrente) {
-			System.out.println(object);
+		for (ContaCorrente cc : lContas) {
+			System.out.println(cc.);
 		}
 
-		for (Object object : contaPoupanca) {
+		for (Object object : lContasP) {
 			System.out.println(object);
 		}
 		
-		contaCorrente.clear();
-		contaPoupanca.clear();
+		lContas.clear();
+		lContasP.clear();
 		
-		System.out.println(contaCorrente.size());
-		System.out.println(contaPoupanca.size());
+		System.out.println(lContas.size());
+		System.out.println(lContasP.size());
 
 	}
 
