@@ -1,6 +1,9 @@
 package lista3.exercicio2;
 
+import java.text.DecimalFormat;
+
 public class CDs extends Produto {
+	DecimalFormat df = new DecimalFormat("#0.00");
 	
 	private String numFaixas;
 
@@ -16,6 +19,15 @@ public class CDs extends Produto {
 
 	public void setNumFaixas(String numFaixas) {
 		this.numFaixas = numFaixas;
+	}
+
+	@Override
+	public String imprimirDados() {
+		String dados = "";
+		dados += "Nome: " + getNome();
+		dados += "\nPreço: R$ " + df.format(getPreco());
+		dados += "\nNúmero de faixas: " + getNumFaixas();
+		return dados;
 	}
 	
 	

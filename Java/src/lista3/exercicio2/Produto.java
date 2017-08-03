@@ -24,7 +24,7 @@ public abstract class Produto {
 		this.preco = preco;
 	}
 	
-	
+	public abstract String imprimirDados();
 	
 
 }
