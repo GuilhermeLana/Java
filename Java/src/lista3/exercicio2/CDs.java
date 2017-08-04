@@ -7,8 +7,8 @@ public class CDs extends Produto {
 	
 	private String numFaixas;
 
-	public CDs(String nome, double preco, String numFaixas) {
-		super(nome, preco);
+	public CDs(String nome, double preco, String codigoBarras, String numFaixas) {
+		super(nome, preco, codigoBarras);
 		this.numFaixas = numFaixas;
 	
 	}
@@ -25,8 +25,8 @@ public class CDs extends Produto {
 	public String imprimirDados() {
 		String dados = "";
 		dados += "Nome: " + getNome();
-		dados += "\nPreço: R$ " + df.format(getPreco());
-		dados += "\nNúmero de faixas: " + getNumFaixas();
+		dados += ", Preço: R$ " + df.format(getPreco());
+		dados += ", Número de faixas: " + getNumFaixas();
 		return dados;
 	}
 	

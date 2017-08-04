@@ -7,8 +7,8 @@ public class DVDs extends Produto{
 	
 	private String duracao;
 
-	public DVDs(String nome, double preco, String duracao) {
-		super(nome, preco);
+	public DVDs(String nome, double preco, String codigoBarras, String duracao) {
+		super(nome, preco, codigoBarras);
 		this.duracao = duracao;
 	}
 
@@ -24,8 +24,8 @@ public class DVDs extends Produto{
 	public String imprimirDados() {
 		String dados = "";
 		dados += "Nome: " + getNome();
-		dados += "\nPreço: R$ " + df.format(getPreco());
-		dados += "\nDuração: " + getDuracao();
+		dados += ", Preço: R$ " + df.format(getPreco());
+		dados += ", Duração: " + getDuracao();
 		return dados;
 	}
 	

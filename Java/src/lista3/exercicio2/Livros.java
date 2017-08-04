@@ -7,8 +7,8 @@ public class Livros extends Produto{
 	
 	private String autor;
 
-	public Livros(String nome, double preco, String autor) {
-		super(nome, preco);
+	public Livros(String nome, double preco, String codigoBarras, String autor) {
+		super(nome, preco, codigoBarras);
 		this.autor = autor;
 	}
 
@@ -24,8 +24,8 @@ public class Livros extends Produto{
 	public String imprimirDados() {
 		String dados = "";
 		dados += "Nome: " + getNome();
-		dados += "\nPreço: R$ " + df.format(getPreco());
-		dados += "\nAutor: " + getAutor();
+		dados += ", Preço: R$ " + df.format(getPreco());
+		dados += ", Autor: " + getAutor();
 		return dados;
 	}
 	
