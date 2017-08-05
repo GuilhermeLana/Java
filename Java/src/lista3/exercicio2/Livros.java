@@ -28,6 +28,12 @@ public class Livros extends Produto{
 		dados += ", Autor: " + getAutor();
 		return dados;
 	}
+
+	@Override
+	public int compareTo(Produto arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 

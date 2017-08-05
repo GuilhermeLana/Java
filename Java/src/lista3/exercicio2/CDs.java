@@ -29,6 +29,12 @@ public class CDs extends Produto {
 		dados += ", Número de faixas: " + getNumFaixas();
 		return dados;
 	}
+
+	@Override
+	public int compareTo(Produto o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 

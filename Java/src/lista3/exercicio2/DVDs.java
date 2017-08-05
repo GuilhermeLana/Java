@@ -28,6 +28,12 @@ public class DVDs extends Produto{
 		dados += ", Duração: " + getDuracao();
 		return dados;
 	}
+
+	@Override
+	public int compareTo(Produto o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 

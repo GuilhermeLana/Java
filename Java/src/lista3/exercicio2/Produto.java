@@ -1,6 +1,6 @@
 package lista3.exercicio2;
 
-public abstract class Produto {
+public abstract class Produto implements Comparable<Produto> {
 	
 	private String nome;
 	private double preco;
@@ -46,6 +46,10 @@ public abstract class Produto {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Nome : " + this.nome + ", Preço: R$ " + this.preco;
+	}
+
+	public int compareTo(Produto arg0) {
+		return 0;
 	}
 	
 	
